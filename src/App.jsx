@@ -41,13 +41,13 @@ const projectData = [
   }
 ];
 
-// --- DATA PENDIDIKAN ---
+// --- DATA PENDIDIKAN (SUDAH DIPERBAIKI: 2026) ---
 const educationData = [
   {
     id: 1,
     school: "Universitas Muhammadiyah Tangerang",
     major: "S1 Teknik Informatika",
-    year: "Lulus 2025",
+    year: "Lulus 2026", // <-- SUDAH DIUBAH
     extra: "IPK 3.47",
     color: "bg-sky-500", 
     mapUrl: "https://maps.google.com/?q=Jl.+Perintis+Kemerdekaan+I+No.33,+RT.007/RW.003,+Babakan,+Cikokol,+Kec.+Tangerang,+Kota+Tangerang,+Banten+15118"
@@ -233,9 +233,9 @@ export default function App() {
                       <h2 className="text-3xl font-bold text-sky-400 mb-2">{selectedProject.title}</h2>
                       <p className="text-slate-400 mb-6 border-b border-slate-800 pb-4">{selectedProject.subtitle}</p>
                       <div className="prose prose-invert max-w-none text-slate-300">
-                         <p className="text-lg mb-4 italic text-slate-200">"{selectedProject.desc}"</p>
-                         <div className="p-5 bg-slate-950/50 rounded-xl border border-slate-800/50 mb-6"><p className="leading-relaxed text-sm md:text-base">{selectedProject.fullDetails}</p></div>
-                         <div className="flex flex-wrap gap-2 mt-6">{selectedProject.tags?.map(tag => (<span key={tag} className="px-3 py-1 bg-sky-500/10 text-sky-300 rounded-full text-xs font-medium border border-sky-500/20">#{tag}</span>))}</div>
+                          <p className="text-lg mb-4 italic text-slate-200">"{selectedProject.desc}"</p>
+                          <div className="p-5 bg-slate-950/50 rounded-xl border border-slate-800/50 mb-6"><p className="leading-relaxed text-sm md:text-base">{selectedProject.fullDetails}</p></div>
+                          <div className="flex flex-wrap gap-2 mt-6">{selectedProject.tags?.map(tag => (<span key={tag} className="px-3 py-1 bg-sky-500/10 text-sky-300 rounded-full text-xs font-medium border border-sky-500/20">#{tag}</span>))}</div>
                       </div>
                     </motion.div>
                   </motion.div>
